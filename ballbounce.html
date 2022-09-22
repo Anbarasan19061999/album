@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="ball.css"  rel="stylesheet">
+<title> movement</title>
+<style>
+body{
+background-color:red;
+
+}
+.movement1{
+
+width:30px;
+height:30px;
+position:absolute;
+border-radius:50%;
+background-color:yellow;
+left:-30px;
+top:0px;
+animation: ball 3s linear infinite;
+
+}
+
+
+@keyframes ball{
+
+      16% , 48% , 78%{
+
+             top:300px;
+             animation-timing-function:ease-out;
+             background-color:red;
+              }
+
+      32%{
+        top:50px;
+        animation-timing-function:ease-in;
+         background-color:pink;
+         }
+
+
+ 62%{
+
+        top:150px;
+        animation-timing-function:ease-in;
+         background-color:green;
+         }
+
+ 90%{
+     
+        top:200px;
+        animation-timing-function:ease-in;
+         background-color:yellow;
+         }
+ 100%
+     {
+
+        left:100%;
+        top:100%;
+        animation-timing-function:ease-out; 
+        transform:rotate(360deg);
+         }
+
+}
+
+</style>
+</head>
+
+<body>
+<div class="movement1">
+</div>
+<div class="movement2">
+</div>
+</body>
+</html>
